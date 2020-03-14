@@ -62,8 +62,9 @@ class PlacesController extends Controller
      */
     public function show(Place $place)
     {
-        $categories = Category::all();
+        // $categories = Category::all();
         // $inventoriesReady = $place->inventories()->where('status', 'Ready')->where('place_id', $place->id)->count();
+        $categories = $place->categories;
         return view('places.place_profile', compact('place','categories'));
     }
 

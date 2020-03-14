@@ -14,4 +14,10 @@ class Place extends Model
 
     	return $this->hasMany(Inventory::class);
     }
+
+    public function categories(){
+
+    	return $this->belongsToMany(Category::class, 'inventories')->groupBy('place_id')->groupBy('category_id');
+    }
+
 }
