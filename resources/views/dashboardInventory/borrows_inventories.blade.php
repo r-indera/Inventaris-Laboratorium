@@ -52,7 +52,7 @@
                         <td>{{ $inventory->device->merk }}</td>
                         <td>{{ $inventory->kode }}</td>
                         <td>{{ $inventory->status }}</td>
-                        <td>{{ $inventory->device->thn_pengadaan }}</td>
+                        <td>{{ $inventory->thn_pengadaan }}</td>
                         <td>{{ $inventory->place->name }}</td>
                       </tr>
                       @endforeach

@@ -91,6 +91,7 @@ class InventoriesController extends Controller
             'category_id' => $request->category_id,
             'device_id' => $request->device_id,
             'kode' => $request->kode,
+            'thn_pengadaan' => $request->thn_pengadaan,
             'status' => 'Ready',
         ]);
         return redirect('/inventory')->with('status', 'Data Peralatan Berhasil Tambah');

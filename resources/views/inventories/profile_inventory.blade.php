@@ -108,8 +108,7 @@
                         <p class="text">{{ $inventory->status }}</p>
                         <hr>
                         <strong><i class="fas fa-book mr-1"></i> Bulan-Tahun Pengadaan </strong>
-                        <!-- <p class="text">{{ $inventory->thn_pengadaan }}</p>                          -->
-                        <p class="text">{{ Carbon\Carbon::parse ($inventory->device->thn_pengadaan)->format('M-Y') }}</p>                         
+                        <p class="text">{{ Carbon\Carbon::parse ($inventory->thn_pengadaan)->format('M-Y') }}</p>                         
 
                       </div>
                       <!-- /.card-body -->
@@ -200,7 +199,7 @@
                         
                         <label for="device_id" class="col-sm-2 col-form-label">Tahun/bulan Pengadaan**</label>
                         <div class="col-sm-4">
-                          <li class="list-group-item">{{ $inventory->device->thn_pengadaan }}</li>
+                          <li class="list-group-item">{{ $inventory->thn_pengadaan }}</li>
                         </div>
                       </div>
                       

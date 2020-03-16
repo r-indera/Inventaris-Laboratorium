@@ -42,7 +42,6 @@ class DevicesController extends Controller
         $device = [
             'category_id' => $request->category_id,
             'merk' => $request->merk,
-            'thn_pengadaan' => $request->thn_pengadaan,
             'specification' => $request->specification,
         ];
 

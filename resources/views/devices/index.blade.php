@@ -26,7 +26,6 @@
                     <th>No</th>
                     <th>Merk</th>
                     <th>Spesifikasi Alat</th>
-                    <th>Tahun Pengadaan</th>
                     <th>Jumlah</th>
                     <th>Gambar Perangkat</th>
                   </tr>
@@ -38,7 +37,6 @@
                     <td>{{ $no++ }}</td>
                     <td>{{ $device->merk }}</td>
                     <td>{{ $device->specification }}</td>
-                    <td>{{ $device->thn_pengadaan }}</td>
                     <td>{{ $device->inventories->count() }}</td>
                     <td>
                       <img src="{{ asset('images/devices/'.$device->device_foto) }}" width="100px" class="img-responsive" alt="image">
@@ -89,10 +87,6 @@
           <div class="form-group">
             <label for="merk">Merk Peralatan</label>
             <input type="text" name="merk"  class="form-control" id="merk" placeholder="Merk Alat">
-          </div>
-          <div class="form-group">
-            <label for="thn_pengadaan">Tahun Pengadaan</label>
-            <input type="month" name="thn_pengadaan"  class="form-control" id="thn_pengadaan">
           </div>
           <div class="form-group">
             <label for="specification">Detail Spesifikasi Alat</label>

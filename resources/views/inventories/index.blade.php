@@ -144,6 +144,10 @@
             <label for="kode">Kode Alat</label>
             <input type="text" name="kode" id="kode" class="form-control" placeholder="No Register Alat">
           </div>
+          <div class="form-group">
+            <label for="thn_pengadaan">Tahun Pengadaan</label>
+            <input type="month" name="thn_pengadaan"  class="form-control" id="thn_pengadaan">
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary">Submit</button>
