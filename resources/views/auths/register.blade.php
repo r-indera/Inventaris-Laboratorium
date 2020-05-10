@@ -10,7 +10,7 @@
 
        <div class="col-md-8 text-md-left">
         <div class="card">
-          <div class="card-header"><b>{{ __('Register') }}</b></div>
+          <div class="card-header"><b>{{ __('Register Mahasiswa') }}</b></div>
 
           <div class="card-body">
             <form method="POST" action="{{ route('register') }}">
@@ -63,6 +63,18 @@
 
                 <div class="col-md-6">
                   <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                </div>
+              </div>
+
+               <div class="form-group row">
+                <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Role User') }}</label>
+
+                <div class="col-md-6">
+                  <select name="role" type="text" id="role" class="form-control">
+                    <option value="">--silahkan isi--</option>
+                    <option value="staff">Staff</option>
+                    <option value="mahasiswa">Mahasiswa</option>
+                  </select>
                 </div>
               </div>
 

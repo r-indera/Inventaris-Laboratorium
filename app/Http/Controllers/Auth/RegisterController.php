@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Employee;
 use App\Student;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -74,14 +75,24 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'role' => 'mahasiswa',
+            'role' => $data['role'],
         ]);
 
+        if ($user->role == 'staff'){
+        $employee = Employee::create([
+            'user_id' => $user->id,
+            'name' => $data['name'],
+            'email' => $data['email'],
+        ]);
+
+        } else if ($user->role == 'mahasiswa'){
         $student = Student::create([
             'user_id' => $user->id,
             'name' => $data['name'],
             'email' => $data['email'],
         ]);
+        
+        }
 
         return $user;
     }
