@@ -28,9 +28,9 @@
                     <tr>
                       <th>No</th>
                       <th></th>
-                      <th>Tempat</th>
-                      <th>Jumlah</th>
-                      <th>Foto Tempat</th>
+                      <th>Tempat <br></th>
+                      <th>Jumlah <br> Peralatan</th>
+                      <th>Foto <br> Tempat</th>
                     </tr>
                   </thead>
                   <tbody>

@@ -10,7 +10,7 @@
 
        <div class="col-md-8 text-md-left">
         <div class="card">
-          <div class="card-header"><b>{{ __('Register Mahasiswa') }}</b></div>
+          <div class="card-header"><b>{{ __('Register User') }}</b></div>
 
           <div class="card-body">
             <form method="POST" action="{{ route('register') }}">
