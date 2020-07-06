@@ -39,6 +39,11 @@ class BorrowsController extends Controller
      */
     public function store(Request $request, $user_id, $inventory_id)
     {
+        $request->validate([
+            'keperluan' => 'required',
+            'start_date' => 'required',
+            'due_date' => 'required'
+        ]);
         // dd($request->all());
         $borrows = $request->all();
         $borrows['user_id'] = $user_id;

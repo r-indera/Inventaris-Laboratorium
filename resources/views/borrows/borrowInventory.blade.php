@@ -55,16 +55,31 @@
                       <div class="form-group">
                         <label for="keperluan">Alasan Peminjaman</label>
                         <div class="col-sm-12">
-                          <textarea type="text" name="keperluan" id="keperluan" class="form-control" rows="3" placeholder="Alasan Peminjaman"></textarea>
+                          <textarea type="text" name="keperluan" id="keperluan" class="form-control @error('keperluan') is-invalid @enderror" rows="3" placeholder="Alasan Peminjaman"></textarea>
+                          @error('keperluan')
+                          <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                          </span>
+                          @enderror
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="start_date">Tanggal Pinjam</label>
-                        <input type="date" name="start_date"  class="form-control" id="start_date">
+                        <input type="date" name="start_date"  class="form-control @error('start_date') is-invalid @enderror" id="start_date">
+                        @error('start_date')
+                        <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                       </div>
                       <div class="form-group">
                         <label for="due_date">Tanggal Kembali</label>
-                        <input type="date" name="due_date"  class="form-control" id="due_date">
+                        <input type="date" name="due_date"  class="form-control @error('due_date') is-invalid @enderror" id="due_date">
+                        @error('due_date')
+                        <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                       </div>
                       <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>

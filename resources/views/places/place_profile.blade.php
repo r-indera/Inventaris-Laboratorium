@@ -210,7 +210,7 @@
               </div>
             </nav>
             <div class="tab-content p-3" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby=profile-tab">
+              <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 {{ $place->ket }}
 
               <hr>
@@ -226,7 +226,7 @@
               <hr>
 
               </div>
-              <div class="tab-pane fade" id="category" role="tabpanel" aria-labelledby=category-tab">
+              <div class="tab-pane fade" id="category" role="tabpanel" aria-labelledby="category-tab">
 
                 <div class="card-body table-responsive p-0" align="center">
                   <table class="table table-hover">
